@@ -18,6 +18,11 @@
     "clean": "lerna run --parallel clean",
     "release": "lerna publish"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "rimraf": "^3.0.1"
   },
