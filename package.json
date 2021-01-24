@@ -16,7 +16,15 @@
     "build": "run-p clean run-s tsc -b ./packages/tsconfig.base.json",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna run --parallel clean",
+    "lint": "yarn run workspaces lint",
     "release": "lerna publish"
+  },
+  "lint-staged": {
+    "**/*.+{ts|tsx}": [
+      "prettier --write --single-quote",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
@@ -24,10 +32,11 @@
     }
   },
   "dependencies": {
+    "lint-staged": "^10.5.3",
     "rimraf": "^3.0.1"
   },
   "devDependencies": {
-    "husky": "^5.0.6",
+    "husky": "^4.3.8",
     "lerna": "^3.20.2",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
