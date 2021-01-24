@@ -37,6 +37,16 @@ module.exports = {
     contentBase: commonPaths.outputPath,
     compress: true,
     hot: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        pathRewrite: { '^/api': '' },
+      },
+      '/socket.io/*': {
+        target: 'http://localhost:3000',
+        ws: true,
+      },
+    },
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };
