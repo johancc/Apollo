@@ -45,6 +45,9 @@ webpack
 3- build and bundling your resources for production `yarn build`.
 
 
+## Development
+
+To enable live reloading, you can use `yarn start`. To use Storybook, you can use `yarn run storybook`.
 
 ### Configuration
 * Webpack Config paths based on your file structure you can go to `webpack/paths.js` and modify the source and file names based on your need.
@@ -67,6 +70,7 @@ webpack
 * [Prettier](https://github.com/prettier/prettier) [ Code formatter ]
 * [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader) & [SASS-loader](https://github.com/webpack-contrib/sass-loader)
 * [CSS modules](https://github.com/css-modules/css-modules) [ Isolated style based on each component ]
+* [Storybook](https://storybook.js.org/)
 * [Browsers list](https://github.com/browserslist/browserslist) [ Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env ]
 * [React hot loader](https://github.com/gaearon/react-hot-loader)
 * [Webpack dev serve](https://github.com/webpack/webpack-dev-server) 
