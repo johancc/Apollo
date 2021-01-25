@@ -3,7 +3,6 @@ import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Home, HomeProps } from './Home';
-import * as NavbarStories from '../../modules/Navbar';
 
 export default {
   title: 'Example/Page',
@@ -13,11 +12,5 @@ export default {
 const Template: Story<HomeProps> = args => <Home {...args} />;
 
 export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  ...NavbarStories.LoggedIn.args,
-};
 
 export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  ...NavbarStories.LoggedOut.args,
-};

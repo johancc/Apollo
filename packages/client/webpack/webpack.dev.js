@@ -15,9 +15,7 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: [
           'style-loader',
-          {
-            loader: '@teamsupercell/typings-for-css-modules-loader',
-          },
+          'css-modules-typescript-loader',
           {
             loader: 'css-loader',
             options: {

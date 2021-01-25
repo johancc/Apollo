@@ -1,19 +1,10 @@
 import React from 'react';
-import Code from '../../modules/Code';
-import { Navbar } from '../../modules/Navbar/Navbar';
-import styles from './home.css';
+import './home.css';
 
-export interface HomeProps {
-  user?: {};
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
-}
+export interface HomeProps {}
 
-export const Home: React.FC<HomeProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Home: React.FC<HomeProps> = () => (
   <article>
-    <Navbar user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
-
     <section>
       <h2>Welcome</h2>
       <p>
@@ -49,9 +40,8 @@ export const Home: React.FC<HomeProps> = ({ user, onLogin, onLogout, onCreateAcc
         </a>
         .
       </p>
-      <Code>hello world</Code>
-      <div className={styles.tipWrapper}>
-        <span className={styles.tip}>Tip</span> Adjust the width of the canvas with the{' '}
+      <div className="tip-wrapper">
+        <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
         <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path

@@ -3290,11 +3290,6 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/preset-scss@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-scss/-/preset-scss-1.0.3.tgz#8ac834545c642dada0f64f510ef08dfb882e9737"
-  integrity sha512-o9Iz6wxPeNENrQa2mKlsDKynBfqU2uWaRP80HeWp4TkGgf7/x3DVF2O7yi9N0x/PI1qzzTTpxlQ90D62XmpiTw==
-
 "@storybook/react@^6.1.15":
   version "6.1.15"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.1.15.tgz#e17d00b05b8980ad381ba701805309ed46d1fdcd"
@@ -3359,7 +3354,7 @@
     regenerator-runtime "^0.13.7"
     source-map "^0.7.3"
 
-"@storybook/theming@6.1.15", "@storybook/theming@^6.1.15":
+"@storybook/theming@6.1.15":
   version "6.1.15"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.1.15.tgz#01083ab89904dd959429b0b3fd1c76bd0ecc59ef"
   integrity sha512-88IdYaPzp4NMKf/GKBrPggxD6/d/lkdQ4SNowXxN9g9eONd9M7HtTbjuJGRCbGMJ52xGcbpj2exEnAqKQ2iodA==
