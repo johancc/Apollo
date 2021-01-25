@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { Button } from './Button';
-import styles from './header.css';
+import { Button } from '../Button/Button';
+import styles from './navbar.css';
 
-export interface HeaderProps {
+export interface NavbarProps {
   user?: {};
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Navbar: React.FC<NavbarProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
     <div className={styles.wrapper}>
       <div>

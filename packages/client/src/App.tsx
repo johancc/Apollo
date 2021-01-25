@@ -1,27 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { hot } from 'react-hot-loader/root';
-import { Page } from './stories/Page';
+import { Home } from './components/pages/Home/Home';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: undefined,
-    };
-  }
-
-  render() {
-    return (
-      <Page
+const App: React.FC = () => {
+  const [user, setUser] = useState(undefined);
+  return (
+    <ChakraProvider>
+      <Home
         onCreateAccount={() => {
-          this.setState({ user: 'Ben Bitdiddle' });
+          setUser('Ben Bitdiddle');
         }}
-        onLogin={() => this.setState({ user: 'Ben Bitdiddle' })}
-        onLogout={() => this.setState({ user: undefined })}
-        {...this.state}
+        onLogin={() => setUser('Ben Bitdiddle')}
+        onLogout={() => setUser('Ben Bitdiddle')}
+        user={user}
       />
-    );
-  }
-}
+    </ChakraProvider>
+  );
+};
 
 export default hot(App);

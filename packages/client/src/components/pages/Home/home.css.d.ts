@@ -1,14 +1,14 @@
-declare namespace PageCssNamespace {
-  export interface IPageCss {
+declare namespace HomeCssNamespace {
+  export interface IHomeCss {
     tip: string;
     'tip-wrapper': string;
     tipWrapper: string;
   }
 }
 
-declare const PageCssModule: PageCssNamespace.IPageCss & {
+declare const HomeCssModule: HomeCssNamespace.IHomeCss & {
   /** WARNING: Only available when `css-loader` is used without `style-loader` or `mini-css-extract-plugin` */
-  locals: PageCssNamespace.IPageCss;
+  locals: HomeCssNamespace.IHomeCss;
 };
 
-export = PageCssModule;
+export = HomeCssModule;
