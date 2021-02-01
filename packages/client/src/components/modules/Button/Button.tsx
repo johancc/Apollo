@@ -1,48 +1,33 @@
-import React from 'react';
-import './button.css';
+import React, { FC } from 'react';
 
-export interface ButtonProps {
+type ButtonTypes = {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
+   * Label of the button
    */
   label: string;
   /**
-   * Optional click handler
+   * Boolean value to define the button style
    */
-  onClick?: () => void;
-}
+  outlined?: boolean;
+  /**
+   * Button click action
+   */
+  onClick(): void;
+};
 
-/**
- * Primary UI component for user interaction
- */
-export const Button: React.FC<ButtonProps> = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+const BASE_BUTTON =
+  'rounded outline-none shadow py-3 px-12 font-normal uppercase tracking-wider text-lg';
+const CONTAINED_BUTTON = `${BASE_BUTTON} bg-blue-400 border border-blue-400 text-white`;
+const OUTLINED_BUTTON = `${BASE_BUTTON} border border-blue-400 text-blue-400`;
+
+export const Button: FC<ButtonTypes> = ({ onClick, label, outlined }) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
+      onClick={onClick}
+      className={outlined ? OUTLINED_BUTTON : CONTAINED_BUTTON}
     >
-      {label}
+      <span>{label}</span>
     </button>
   );
 };
