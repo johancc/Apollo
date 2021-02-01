@@ -10,6 +10,6 @@ export default {
 
 export const primary = () => {
   const label = text('Label', 'See now');
-  const outlined = boolean('Outlined', true);
+  const outlined = boolean('Outlined', false);
   return <Button onClick={action('clicked')} outlined={outlined} label={label} />;
 };
