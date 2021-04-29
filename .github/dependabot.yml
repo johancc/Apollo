@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@babel/register"
+    versions:
+    - 7.12.13
+    - 7.13.8
+  - dependency-name: "@babel/plugin-proposal-export-namespace-from"
+    versions:
+    - 7.12.13
+  - dependency-name: eslint
+    versions:
+    - 7.22.0
+  - dependency-name: mongoose
+    versions:
+    - 5.11.15
+    - 5.12.0
+  - dependency-name: sass-loader
+    versions:
+    - 10.1.1
+    - 11.0.0
+    - 11.0.1
+  - dependency-name: html-webpack-plugin
+    versions:
+    - 5.0.0
+  - dependency-name: eslint-plugin-jest
+    versions:
+    - 24.1.3
