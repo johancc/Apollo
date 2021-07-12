@@ -3566,9 +3566,9 @@
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
 "@typegoose/typegoose@^7.4.8":
-  version "7.4.8"
-  resolved "https://registry.yarnpkg.com/@typegoose/typegoose/-/typegoose-7.4.8.tgz#0e117166b9ebcef556c896f2dd9635828dd630a0"
-  integrity sha512-fMd+RfyX9e9cCt2P5arh4q3hJtd/emHkjiES0VEIgtOH/XRF7av7ZuktRIEn/KO51H5MSEo9H+Xok6oK+nT7zw==
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@typegoose/typegoose/-/typegoose-7.6.3.tgz#1dbb54cb580129462e3460f5f94b2f929f83c89f"
+  integrity sha512-u12nUEmpMa0e+K8UuzAZvSnWZ7JZGo0yMs7HR4mG47gJJhVe/PIAzfXVPV+CJQBZrMSPyaEZ6HRKjmDxnjEgFg==
   dependencies:
     lodash "^4.17.20"
     loglevel "^1.7.0"
